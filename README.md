@@ -1,4 +1,4 @@
-Hotshot is a personal portfolio website based on NextJS, Typescript, and tailwindcss.
+Hotshot is a personal portfolio website based on NextJS, Typescript, and Tailwindcss.
 
 ## Getting Started
 
