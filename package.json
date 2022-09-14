@@ -7,8 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "postinstall": "husky install",
-    "lint-staged": "lint-staged"
+    "prepare": "husky install"
   },
   "dependencies": {
     "next": "12.3.0",
