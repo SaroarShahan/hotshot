@@ -1,5 +1,11 @@
+import CallToAction from './CallToAction';
+
 const Footer = () => {
-  return <footer>footer</footer>;
+  return (
+    <footer>
+      <CallToAction />
+    </footer>
+  );
 };
 
 export default Footer;
