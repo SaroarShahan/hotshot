@@ -1,0 +1,19 @@
+.btn {
+  /* box-shadow: 0px 8px 40px #aad2ff; */
+
+  @apply py-4 text-sm md:text-base font-semibold uppercase rounded-md px-6 md:px-9 transition-all duration-200;
+}
+
+.btn.btn-full {
+  @apply w-full;
+}
+
+/* Disabled Button */
+.btn:disabled {
+  @apply cursor-not-allowed bg-opacity-60;
+}
+
+/* Primary Button */
+.btn-primary {
+  @apply text-white bg-primary;
+}
