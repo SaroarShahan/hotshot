@@ -88,7 +88,7 @@ const Header = () => {
                     className={clsx(
                       'border-b-2 md:border-b-transparent border-gray border-opacity-10 pb-4 md:pb-0',
                       currentRoute === menuItem.path
-                        ? 'md:border-b-gray md:hover:border-b-primary'
+                        ? 'md:border-b-primary'
                         : ''
                     )}
                     onClick={handleToggleClick}
@@ -96,8 +96,10 @@ const Header = () => {
                     <Link href={menuItem.path}>
                       <a
                         className={clsx(
-                          'text-sm transition-all duration-150 hover:text-primary block text-gray',
-                          currentRoute === menuItem.path ? 'text-primary' : ''
+                          'text-sm transition-all duration-150 hover:text-primary block',
+                          currentRoute === menuItem.path
+                            ? 'text-primary'
+                            : 'text-gray'
                         )}
                       >
                         {menuItem.label}
