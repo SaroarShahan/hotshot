@@ -1,0 +1,19 @@
+.card {
+  @apply rounded-xl transition-all duration-300;
+}
+
+.card__title {
+  @apply text-sm md:text-xl font-semibold text-gray-100;
+}
+.card__text {
+  @apply text-gray font-normal text-sm md:text-lg;
+}
+.card__link {
+  @apply text-xs md:text-sm font-semibold uppercase transition-all duration-150 hover:text-primary;
+}
+.card__meta {
+  @apply flex justify-between mb-8;
+}
+.card__imgwrapper {
+  @apply absolute flex left-2/4 md:left-11 -translate-x-2/4 md:translate-x-0 rounded-full -top-[37px] pointer-events-none;
+}
