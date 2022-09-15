@@ -1,8 +1,24 @@
-import '../styles/globals.css'
-import type { AppProps } from 'next/app'
+import { ReactNode } from 'react';
+import type { AppProps, NextAppProps } from 'next/app';
 
-function MyApp({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
+import SiteLayout from 'layout/SiteLayout';
+import '../styles/globals.css';
+
+function getDefaultLayout(children: ReactNode) {
+  return <SiteLayout>{children}</SiteLayout>;
 }
 
-export default MyApp
+function MyApp(props: NextAppProps) {
+  const { Component, pageProps } = props;
+
+  const renderAppLayout = () => {
+    const children = <Component {...pageProps} />;
+    const { getLayout = getDefaultLayout } = Component.pageOptions || {};
+
+    return getLayout(children);
+  };
+
+  return renderAppLayout();
+}
+
+export default MyApp;
