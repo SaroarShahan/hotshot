@@ -27,6 +27,7 @@ module.exports = {
       3: '3rem',
       3.5: '3.5rem',
       4: '4rem',
+      4.8: '4.8rem',
       5: '5rem',
       6: '6rem',
       7: '7rem',
@@ -44,6 +45,20 @@ module.exports = {
       primary: {
         DEFAULT: '#007bff',
       },
+
+      gray: {
+        300: '#d1d5db',
+        800: '#2F313E',
+        900: '#263C53',
+      },
+    },
+    fontSize: {
+      xs: ['1.2rem', '1.4'],
+      sm: ['1.4rem', '1.6rem'],
+      base: ['1.6rem', '1.7ren'],
+      lg: ['1.8rem', '2.6rem'],
+      xl: ['2rem', '2.8rem'],
+      '2xl': ['2.4rem', '3.2rem'],
     },
     extend: {
       container: {
@@ -59,7 +74,7 @@ module.exports = {
           fontSize: '62.5%',
         },
         body: {
-          fontSize: '1.6rem',
+          fontSize: '1.4rem',
         },
       });
 
