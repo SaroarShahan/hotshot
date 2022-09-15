@@ -6,7 +6,7 @@ const SiteLayout = ({ children }: PropsWithChildren<{}>) => {
   return (
     <>
       <Header />
-      <main>{children}</main>
+      <main className="pt-[112px]">{children}</main>
       <Footer />
     </>
   );
