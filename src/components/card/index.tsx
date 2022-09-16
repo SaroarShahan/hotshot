@@ -6,6 +6,7 @@ import CardTitle from './CardTitle';
 import CardText from './CardText';
 import CardMeta from './CardMeta';
 import CardLink from './CardLink';
+import CardImage from './CardImage';
 
 interface CardProps {
   className?: string;
@@ -17,7 +18,7 @@ const Card = ({ children, className = '' }: PropsWithChildren<CardProps>) => {
   return <div className={classNames}>{children}</div>;
 };
 
-Card.Image = Image;
+Card.Image = CardImage;
 Card.Body = CardBody;
 Card.Meta = CardMeta;
 Card.Title = CardTitle;

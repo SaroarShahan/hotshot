@@ -1,7 +1,7 @@
-import Hello from 'components/Hello';
+import Services from 'features/Services';
 
 const Home = () => {
-  return <Hello />;
+  return <Services />;
 };
 
 export default Home;
