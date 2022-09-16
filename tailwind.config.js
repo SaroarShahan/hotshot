@@ -47,8 +47,9 @@ module.exports = {
       },
 
       gray: {
-        DEFAULT: '#a7b0bd',
         300: '#d1d5db',
+        400: '#a7b0bd',
+        DEFAULT: '#A7B5CA',
         800: '#2F313E',
         900: '#263C53',
       },
@@ -60,6 +61,7 @@ module.exports = {
       lg: ['1.8rem', '2.6rem'],
       xl: ['2rem', '2.8rem'],
       '2xl': ['2.4rem', '3.2rem'],
+      '3xl': ['2.8rem', '3.8rem'],
     },
     extend: {
       container: {
